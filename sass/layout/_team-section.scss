@@ -1,0 +1,52 @@
+.team {
+  background-color: rgba(245, 244, 250, 1);
+}
+
+.team-list-item {
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-expert {
+  font-weight: 500;
+  line-height: 1.18;
+  font-size: 18px;
+}
+
+.team-list-discrip {
+  line-height: 1.18;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  align-items: center;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.extert-text {
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-list-expert {
+  margin-bottom: 10px;
+}
+
+.team-list-discrip {
+  margin-bottom: 16px;
+}
+
+.team-list-item {
+  flex-basis: calc(100% - 90px) / 4;
+}

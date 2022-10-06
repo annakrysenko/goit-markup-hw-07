@@ -1,0 +1,40 @@
+.about {
+  padding-bottom: 47px;
+}
+
+.about-list__thumb {
+  background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* flex-basis: calc(100% - 3 * 30px) / 4;  ============== WHY DOESNT  WORK */
+  max-width: 270px;
+}
+
+.about-list__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+
+  margin-bottom: 10px;
+}
+
+.about-list__discrip {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

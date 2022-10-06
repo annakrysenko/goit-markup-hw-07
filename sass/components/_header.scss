@@ -1,0 +1,101 @@
+
+.header {
+  padding-bottom: 24px;
+  padding-top: 24px;
+
+  border: 1px solid rgba(236, 236, 236, 1);
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  column-gap: 50px;
+}
+
+.header-logo {
+  margin-right: 42px;
+}
+
+.header-mail {
+  margin-left: auto;
+}
+
+.header-mail,
+.header-tel {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header-link {
+  color: var(--dark);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func),
+    border-color var(--transition-dur-and-func);
+}
+
+.header-mail,
+.header-tel,
+.about-list-discrip,
+.team-list-discrip,
+.portfolio-list-discrip {
+  color: var(--gray);
+}
+
+.header-nav {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.71;
+}
+
+.header-icon {
+  fill: gray;
+  transition: fill var(--transition-dur-and-func);
+}
+
+.header-mail:hover .header-icon,
+.header-tel:hover .header-icon,
+.header-mail:focus .header-icon,
+.header-tel:focus .header-icon {
+  fill: var(--brand-color);
+}
+
+.header-list-item {
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  position: relative;
+}
+
+.current {
+  color: var(--brand-color);
+}
+
+.current::after {
+  content: '';
+
+  position: absolute;
+
+  display: flex;
+  background-color: var(--brand-color);
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+
+  margin-top: 28px;
+}
+
+.header-logo span {
+  color: var(--brand-color);
+}
