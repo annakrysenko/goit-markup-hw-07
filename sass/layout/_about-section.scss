@@ -2,7 +2,23 @@
   padding-bottom: 47px;
 }
 
-.about-list__thumb {
+
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about__list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* flex-basis: calc(100% - 3 * 30px) / 4;  ============== WHY DOESNT  WORK */
+  max-width: 270px;
+}
+
+.about__list-thumb {
   background-color: rgba(245, 244, 250, 1);
   border-radius: 4px;
   height: 120px;
@@ -11,30 +27,19 @@
   align-items: center;
 }
 
-.about__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.about-list__item {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  /* flex-basis: calc(100% - 3 * 30px) / 4;  ============== WHY DOESNT  WORK */
-  max-width: 270px;
-}
-
-.about-list__title {
+.about__list-title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
 
   margin-bottom: 10px;
+  color: var(--dark);
 }
 
-.about-list__discrip {
+.about__list-discrip {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  color:var(--gray);
 }
